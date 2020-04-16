@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function Navbar() {
   
     return (
-        <div>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div style={{paddingBottom:"30px"}}>
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
               <div class="navbar-brand">
                 <Link class="navbar-item" href="https://ecell.nitrr.ac.in/">
                   <h1 class="title">Ecell Task</h1>

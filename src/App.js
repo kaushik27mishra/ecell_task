@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Events from './Pages/Events'
-
+import EventPage from './Pages/EventPage'
 
 function App() {
   return (
@@ -9,6 +9,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Events/>
+        </Route>
+        <Route exact path="/event:id">
+          <EventPage/>
         </Route>
       </Switch>
     </div>
