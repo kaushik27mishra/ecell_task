@@ -56,14 +56,17 @@ function Navbar() {
                     </Link>
 
                     <div class="navbar-dropdown">
-                      <Link class="navbar-item">
-                        About
+                      <Link to={'/cadet/list'} class="navbar-item">
+                        List
                       </Link>
-                      <Link class="navbar-item">
-                        Jobs
+                      <Link to={'/cadet/register'} class="navbar-item">
+                        Register
                       </Link>
-                      <Link class="navbar-item">
-                        Contact
+                      <Link to={'/cadet/update'} class="navbar-item">
+                        Update
+                      </Link>
+                      <Link to={'/cadet/delete'} class="navbar-item">
+                        Delete
                       </Link>
                       <hr class="navbar-divider"/>
                       <Link class="navbar-item">

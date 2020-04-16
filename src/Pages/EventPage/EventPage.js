@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Navbar from '../Components/Navbar/Navbar'
+import Navbar from '../../Components/Navbar/Navbar'
 import axios from 'axios';
+
 class EventPage extends Component {
     constructor(props) {
         super(props)
