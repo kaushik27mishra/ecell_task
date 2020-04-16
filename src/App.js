@@ -1,11 +1,16 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
+import { Switch, Route } from 'react-router-dom'
+import Events from './Pages/Events'
 
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Switch>
+        <Route exact path="/">
+          <Events/>
+        </Route>
+      </Switch>
     </div>
     )
 }
