@@ -8,13 +8,15 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "bulma": "^0.8.2",
+    "bulma-extensions": "^6.2.7",
+    "bulma-pageloader": "^0.3.0",
     "bulma-start": "^0.0.4",
     "node-sass": "^4.13.1",
     "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-grid-layout": "^0.18.3",
-    "react-router-dom": "^5.1.2",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
