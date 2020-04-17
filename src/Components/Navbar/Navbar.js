@@ -65,9 +65,6 @@ function Navbar() {
                       <Link to={'/cadet/update'} class="navbar-item">
                         Update
                       </Link>
-                      <Link to={'/cadet/delete'} class="navbar-item">
-                        Delete
-                      </Link>
                       <hr class="navbar-divider"/>
                       <Link class="navbar-item">
                         Report an issue
