@@ -53,7 +53,7 @@ export class CadetsList extends Component {
         return (
             <div>
                 <Navbar/>
-                <div class="container">
+                <div class="container" style={{marginLeft:"15%", marginRight:"15%"}}>
                     <table class="table">
                       <thead>
                         <tr>
