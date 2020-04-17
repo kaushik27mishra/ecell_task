@@ -62,9 +62,6 @@ function Navbar() {
                       <Link to={'/cadet/register'} class="navbar-item">
                         Register
                       </Link>
-                      <Link to={'/cadet/update'} class="navbar-item">
-                        Update
-                      </Link>
                       <hr class="navbar-divider"/>
                       <Link class="navbar-item">
                         Report an issue

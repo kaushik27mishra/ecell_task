@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Navbar from '../../Components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 export class CadetsList extends Component {
     constructor(props) {
@@ -47,6 +48,7 @@ export class CadetsList extends Component {
                  <td>{year}</td>
                  <td>{ecell_user}</td>
                  <td><button class="button" onClick={this.handleDelete(`${id}`)}><span class="icon is-small"><i class="fas fa-trash"></i></span></button></td>
+                 <td><Link to={`/cadet/update/${id}`} ><button class="button"><span class="icon is-small"><i class="fas fa-edit"></i></span></button></Link></td>
               </tr>
            )
         })
@@ -79,6 +81,7 @@ export class CadetsList extends Component {
                             <th>Year</th>
                             <th>Ecell User</th>
                             <th>Delete User</th>
+                            <th>Update User</th>
                         </tr>
                       </thead>
                       <tbody>

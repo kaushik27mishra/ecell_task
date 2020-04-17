@@ -13,9 +13,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Events}/>
           <Route path={`/event/:id`} component={EventPage}/>
+          <Route path={`/cadet/update/:id`} component={CadetsUpdate}/>
           <Route exact path="/cadet/list" component={CadetsList}/>
           <Route exact path="/cadet/register" component={CadetsRegister}/>
-          <Route exact path="/cadet/update" component={CadetsUpdate}/>
         </Switch>
       </BrowserRouter>
     </div>
