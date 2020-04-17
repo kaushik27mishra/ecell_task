@@ -20,6 +20,14 @@ export class CadetsList extends Component {
         })
     }
 
+    handleDelete = (e) = (id) => {
+        axios.delete(`https://ecell.nitrr.ac.in/events/cadets/${id}`)
+        .then(res => {
+          console.log(res);
+          console.log(res.data);
+        })
+    }
+
 
     renderTableData() {
         return this.state.cadets.map((cadet, index) => {
@@ -38,6 +46,7 @@ export class CadetsList extends Component {
                  <td>{flag}</td>
                  <td>{year}</td>
                  <td>{ecell_user}</td>
+                 <td></td>
               </tr>
            )
         })
@@ -69,6 +78,7 @@ export class CadetsList extends Component {
                             <th>Flag</th>
                             <th>Year</th>
                             <th>Ecell User</th>
+                            <th>Delete User</th>
                         </tr>
                       </thead>
                       <tbody>

@@ -7,7 +7,6 @@ export class CadetsRegister extends Component {
         super(props)
     
         this.state = {
-            details_html: "",
             cover_pic: null,
             icon: null,
             email: "",
@@ -54,7 +53,7 @@ export class CadetsRegister extends Component {
 
         let axiosConfig = {
             headers: {
-                'Content-Type': 'application/json;charset=UTF-8',
+                'Content-Type': 'application/json',
                 // "Access-Control-Allow-Origin": "*",
             }
           };
@@ -66,7 +65,7 @@ export class CadetsRegister extends Component {
             date: this.state.date,
             time: this.state.time,
             details: this.state.details,
-            details_html: `</div>${this.state.details}</div>`,
+            details_html: `<div>${this.state.details}</div>`,
             cover_pic: this.state.cover_pic,
             icon: this.state.icon,
             email: this.state.email,

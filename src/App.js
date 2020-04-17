@@ -5,7 +5,6 @@ import CadetsList from './Pages/CadetsList/CadetsList'
 import EventPage from './Pages/EventPage/EventPage'
 import CadetsRegister from './Pages/CadetsRegister/CadetsRegister'
 import CadetsUpdate from './Pages/CadetsUpdate/CadetsUpdate'
-import CadetsDelete from './Pages/CadetsDelete/CadetsDelete'
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
           <Route exact path="/cadet/list" component={CadetsList}/>
           <Route exact path="/cadet/register" component={CadetsRegister}/>
           <Route exact path="/cadet/update" component={CadetsUpdate}/>
-          <Route exact path="/cadet/delete" component={CadetsDelete}/>
         </Switch>
       </BrowserRouter>
     </div>
