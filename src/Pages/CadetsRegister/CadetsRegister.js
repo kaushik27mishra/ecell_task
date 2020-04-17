@@ -52,9 +52,13 @@ export class CadetsRegister extends Component {
             isLoading: true
         })
 
-        const headers = {
-            'Content-Type': 'application/json',
-        }
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                // "Access-Control-Allow-Origin": "*",
+            }
+          };
+          
 
         const data = {
             name: this.state.name,
@@ -72,12 +76,13 @@ export class CadetsRegister extends Component {
         }
         
         
-        axios.post(`https://ecell.nitrr.ac.in/events/cadets/`,  data, {
-            headers : headers
-        })
+        axios.post(`https://ecell.nitrr.ac.in/events/cadets/`,  data, axiosConfig)
         .then(res => {
           console.log(res);
           console.log(res.data);
+        })
+        .catch((err) => {
+            console.log("AXIOS ERROR: ", err);
         })
     }
 
