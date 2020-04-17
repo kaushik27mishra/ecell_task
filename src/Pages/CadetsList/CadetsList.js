@@ -20,7 +20,7 @@ export class CadetsList extends Component {
         })
     }
 
-    handleDelete = (e) = (id) => {
+    handleDelete = (id) => (e) => {
         axios.delete(`https://ecell.nitrr.ac.in/events/cadets/${id}`)
         .then(res => {
           console.log(res);
@@ -46,7 +46,7 @@ export class CadetsList extends Component {
                  <td>{flag}</td>
                  <td>{year}</td>
                  <td>{ecell_user}</td>
-                 <td></td>
+                 <td><button class="button" onClick={this.handleDelete(`${id}`)}><span class="icon is-small"><i class="fas fa-trash"></i></span></button></td>
               </tr>
            )
         })
